@@ -1,0 +1,31 @@
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: rebeccapurple;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  width: 100px;
+  /* border: 2px solid red; */
+}
+button:hover {
+  box-shadow: 0 0 15px greenyellow;
+  transition: all 0.3s ease;
+  transform: scale(0.98888);
+  background-color: greenyellow;
+  color: black;
+}
+
+.box {
+  display: flex;
+  color: black;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.count {
+  font-size: 2rem;
+}
