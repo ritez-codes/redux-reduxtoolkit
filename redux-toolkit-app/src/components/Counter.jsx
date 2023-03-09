@@ -12,11 +12,11 @@ function Counter() {
      return (
           <div className='container'>
                <button onClick={() => {
-                    dispatch(decNum())
+                    dispatch(decNum(5))
                }} className='btn' >-</button>
                <p className='num-box'>{counter.value}</p>
                <button onClick={() => {
-                    dispatch(incNum());
+                    dispatch(incNum(5));
                }} className='btn' >+</button>
           </div>
      )

@@ -1,5 +1,5 @@
 // DUCKS pattern
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   value: 0,
 };
@@ -7,14 +7,14 @@ const counterSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
-    // increment
-    incNum(state) {
+    // increment by 5
+    incNum(state, action) {
       //! its ok to do this because immer makes it immoutable under the hood
-      state.value++;
+      state.value = state.value + action.payload;
     },
-    // decrement
-    decNum(state) {
-      state.value--;
+    // decrement by 5
+    decNum(state, action) {
+      state.value = state.value - action.payload;
     },
   },
 });
