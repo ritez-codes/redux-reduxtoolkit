@@ -18,3 +18,9 @@
   color: rebeccapurple;
   font-weight: bolder;
 }
+
+.item {
+  margin: 20px;
+  border: 2px solid greenyellow;
+  padding: 10px;
+}
